@@ -5,6 +5,6 @@ a{text-decoration: none;}
 header a{color: white;}
 .hamburger{width: 30px; height: 30px; cursor: pointer; display: flex; justify-content: space-between; flex-direction: column;}
 .bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
-.hamburger.open .bar:nth-child(1){transform: rotate(45deg);}
+.hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(9px, 9px);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
-.hamburger.open .bar:nth-child(3){transform: rotate(-45deg);}
+.hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(9px, -9px);}
