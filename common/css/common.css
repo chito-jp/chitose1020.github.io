@@ -4,4 +4,4 @@ main{width: 100%; background-color: aliceblue;}
 a{text-decoration: none;}
 header a{color: white;}
 .hamburger{width: 35px; height: 30px; cursor: pointer; margin: 15px; display: flex; justify-content: space-between;}
-.bar {height: 4px; background-color: white; transition: 0.3s; border-radius: 2px;}
+.bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
