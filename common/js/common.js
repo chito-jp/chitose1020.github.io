@@ -8,7 +8,7 @@ document.body.appendChild(header);
 const hamburger = document.querySelector("header .hamburger");
 console.log(hamburger);
 hamburger.addEventListener("click", () => {
-    console.log("click!");
+  hamburger.classList.toggle("open");
 });
 const main = document.createElement("main");
 document.body.appendChild(main);
