@@ -1,6 +1,6 @@
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
-stylesheet.href = "/common/css/common.css";
+stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
 const header = document.createElement("header");
 header.innerHTML = `<div><h1>Home</h1></div><div>🍔<div>`;
