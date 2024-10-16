@@ -8,4 +8,4 @@ header a{color: white; font-size: 2em;}
 .bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
 .hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(10px, 10px);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
-.hamburger.open .bar:nth-child(3){transform: rotate(-45deg)}
+.hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(10px, -10px)}
