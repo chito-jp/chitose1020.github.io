@@ -4,10 +4,11 @@ header h1{margin: 0 20px;}
 main{width: 100%; background-color: aliceblue;}
 a{text-decoration: none;}
 header a{color: white; font-size: 2em;}
-header .menu{position: absolute; right: 0px; top: 70px; background-color: black;}
+header .menu{width: 200px; height: 100vh; position: absolute; right: -200px; top: 70px; background-color: black; overflow: hidden; transition: 0.3s ease;}
+header .menu.open{transform: translateX(-200px);}
 ul{margin: 0; list-style: none;}
 .hamburger{width: 30px; height: 30px; margin: 0 20px; cursor: pointer; display: flex; justify-content: space-between; flex-direction: column;}
-.bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
+.bar {height: 4px; width: 30px; background-color: white; transition: 0.3s ease; border-radius: 2px;}
 .hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(9px, 9px);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
 .hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(9px, -9px)}
