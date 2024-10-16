@@ -6,7 +6,7 @@ a{text-decoration: none;}
 header a{color: white;}
 .hamburger{width: 30px; height: 30px; margin: 0 20px; cursor: pointer; display: flex; justify-content: space-between; flex-direction: column;}
 .bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
-.menu{position: absolute; top: 70px; color: #333;}
+.menu{position: absolute; top: 70px; left: 0px; color: #333;}
 ul{list-style: none;}
 .hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(7px, 7px);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
