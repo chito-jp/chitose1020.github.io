@@ -3,7 +3,7 @@ stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
 const header = document.createElement("header");
-header.innerHTML = `<a href="/">Home</a><div class="hamburger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div><div class="menu"><ul><li><a href="/">home</a></li></ul></div>`;
+header.innerHTML = `<a href="/">Home</a><div class="hamburger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>`;
 document.body.appendChild(header);
 const hamburger = document.querySelector("header .hamburger");
 console.log(hamburger);
