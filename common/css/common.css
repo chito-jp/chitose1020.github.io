@@ -10,4 +10,4 @@ header a{color: white; font-size: 2em;}
 ul{list-style: none;}
 .hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(7px, 7px);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
-.hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(7x, -7px);}
+.hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(7px, -7px);}
