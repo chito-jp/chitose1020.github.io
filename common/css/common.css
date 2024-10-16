@@ -8,6 +8,6 @@ header a{color: white; font-size: 2em;}
 .bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
 .menu{position: absolute; top: 70px; right: 0px; background-color: #333;}
 ul{list-style: none;}
-.hamburger.open .bar:nth-child(1){transform: rotate(45deg);}
+.hamburger.open .bar:nth-child(1){transform: rotate(45deg) translate(50%, 50%);}
 .hamburger.open .bar:nth-child(2){opacity: 0;}
 .hamburger.open .bar:nth-child(3){transform: rotate(-45deg);}
