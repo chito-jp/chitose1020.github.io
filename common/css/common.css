@@ -4,7 +4,7 @@ header h1{margin: 0 20px;}
 main{width: 100%; background-color: aliceblue;}
 a{text-decoration: none;}
 header a{color: white; font-size: 2em;}
-header .menu{position: absolute; right: 0px; margin-top: 70px;}
+header .menu{position: absolute; right: 0px; top: 70px;}
 ul{margin: 0; list-style: none;}
 .hamburger{width: 30px; height: 30px; margin: 0 20px; cursor: pointer; display: flex; justify-content: space-between; flex-direction: column;}
 .bar {height: 4px; width: 30px; background-color: white; transition: 0.3s; border-radius: 2px;}
