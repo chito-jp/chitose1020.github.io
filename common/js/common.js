@@ -13,7 +13,7 @@ stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
 loadElement("header", "header.html")
-.than(() => {
+.then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
   hamburger.addEventListener("click", () => {
