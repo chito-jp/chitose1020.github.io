@@ -1,13 +1,22 @@
 const loadElement = async (selector, file) => {
-  if(!document.querySelector(selector))return console.warn(`${selector} was not found.`);
-  fetch(file)
-  .then(response => {if (!response.ok) throw new Error(`Failed to load ${file}: ${response.status}`);
-  return response.text();
-})
-.then(html => {
-  document.querySelector(selector).innerHTML = html;
-});
+  const element = document.querySelector(selector);
+  if (!element) {
+    console.warn(`${selector} was not found.`);
+    return;
+  }
+
+  try {
+    const response = await fetch(file);
+    if (!response.ok) {
+      throw new Error(`Failed to load ${file}: ${response.status} ${response.statusText}`);
+    }
+    const html = await response.text();
+    element.innerHTML = html;
+  } catch (error) {
+    console.error(`Error loading ${file}: ${error.message}`);
+  }
 };
+
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
