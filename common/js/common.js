@@ -34,7 +34,4 @@ loadElement("header", "common/html/header.html")
     console.warn("要素が見つかりません");
   }
 });
-const main = document.createElement("main");
-document.body.appendChild(main);
-main.innerHTML = ``;
 loadElement("footer", "common/html/footer.html")
