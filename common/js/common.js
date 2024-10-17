@@ -21,7 +21,7 @@ const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
-loadElement("header", "header.html")
+loadElement("header", "common/html/header.html")
 .then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
@@ -37,6 +37,4 @@ loadElement("header", "header.html")
 const main = document.createElement("main");
 document.body.appendChild(main);
 main.innerHTML = ``;
-const footer = document.createElement("footer");
-document.body.appendChild(footer);
-footer.innerHTML = ``;
+loadElement("footer", "common/html/footer.html")
