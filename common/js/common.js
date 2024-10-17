@@ -1,10 +1,17 @@
+const loadElement = (selector, file) => {
+  fetch(file)
+  .then(response => {if (!response.ok) throw new Error(`Failed to load ${file}: ${response.status}`);
+  return response.text();
+})
+.then(html => {
+  document.querySelector(selector).innerHTML = html;
+});
+};
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
-const header = document.createElement("header");
-header.innerHTML = `<a href="/">Home</a><div class="hamburger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div><div class="menu"><ul><li><a href="/">Home</a></li><li><a href="/article">article</a></li></ul></div>`;
-document.body.appendChild(header);
+loadElement("header", "header.html");
 const hamburger = document.querySelector("header .hamburger");
 const hamburgerMenu = document.querySelector("header .menu");
 hamburger.addEventListener("click", () => {
