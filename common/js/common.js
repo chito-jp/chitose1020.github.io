@@ -1,5 +1,5 @@
 const loadElement = async (selector, file) => {
-  if(document.querySelector(selector))console.warn(`${selector} was not found.`);
+  if(!document.querySelector(selector))return console.warn(`${selector} was not found.`);
   fetch(file)
   .then(response => {if (!response.ok) throw new Error(`Failed to load ${file}: ${response.status}`);
   return response.text();
