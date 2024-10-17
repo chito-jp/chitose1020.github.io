@@ -12,12 +12,14 @@ const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
 stylesheet.href = "common/css/defer.css";
 document.head.appendChild(stylesheet);
-loadElement("header", "header.html");
-const hamburger = document.querySelector("header .hamburger");
-const hamburgerMenu = document.querySelector("header .menu");
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("open");
-  hamburgerMenu.classList.toggle("open");
+loadElement("header", "header.html")
+.than(() => {
+  const hamburger = document.querySelector("header .hamburger");
+  const hamburgerMenu = document.querySelector("header .menu");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    hamburgerMenu.classList.toggle("open");
+  });
 });
 const main = document.createElement("main");
 document.body.appendChild(main);
