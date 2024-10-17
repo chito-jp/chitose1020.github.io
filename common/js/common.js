@@ -25,7 +25,6 @@ loadElement("header", "header.html")
 .then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
-  console.log(document.body.innerHTML);
   if (hamburger && hamburgerMenu) {
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("open");
