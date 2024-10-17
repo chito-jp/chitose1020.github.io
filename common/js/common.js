@@ -13,3 +13,7 @@ hamburger.addEventListener("click", () => {
 });
 const main = document.createElement("main");
 document.body.appendChild(main);
+main.innerHTML = ``;
+const footer = document.createElement("footer");
+document.body.appendChild(footer);
+footer.innerHTML = ``;
