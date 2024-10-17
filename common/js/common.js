@@ -16,11 +16,14 @@ loadElement("header", "header.html")
 .then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
+  console.log(hamburger, hamburgerMenu);
   if (hamburger && hamburgerMenu) {
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("open");
       hamburgerMenu.classList.toggle("open");
     });
+  }else{
+    console.warn("要素が見つかりません");
   }
 });
 const main = document.createElement("main");
