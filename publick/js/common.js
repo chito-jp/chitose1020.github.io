@@ -19,9 +19,9 @@ const loadElement = async (selector, file) => {
 
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
-stylesheet.href = "common/css/defer.css";
+stylesheet.href = "public/css/defer.css";
 document.head.appendChild(stylesheet);
-loadElement("header", "common/html/header.html")
+loadElement("header", "pub/html/header.html")
 .then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
