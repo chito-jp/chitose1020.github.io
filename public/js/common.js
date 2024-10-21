@@ -19,9 +19,9 @@ const loadElement = async (selector, file) => {
 
 const stylesheet = document.createElement("link");
 stylesheet.rel = "stylesheet";
-stylesheet.href = "public/css/defer.css";
+stylesheet.href = "/public/css/defer.css";
 document.head.appendChild(stylesheet);
-loadElement("header", "public/html/header.html")
+loadElement("header", "/public/html/header.html")
 .then(() => {
   const hamburger = document.querySelector("header .hamburger");
   const hamburgerMenu = document.querySelector("header .menu");
@@ -34,4 +34,4 @@ loadElement("header", "public/html/header.html")
     console.warn("要素が見つかりません");
   }
 });
-loadElement("footer", "public/html/footer.html")
+loadElement("footer", "/public/html/footer.html")
