@@ -1,0 +1,13 @@
+{
+    "name": "site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "git submodule update --init --recursive"
+    },
+    "keywords": [],
+    "author": "chito",
+    "license": "ISC"
+  }
+  
