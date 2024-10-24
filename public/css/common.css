@@ -13,3 +13,4 @@ ul{margin: 0; list-style: none;}
 .hamburger.open .bar:nth-child(3){transform: rotate(-45deg) translate(9px, -9px)}
 #title{font-size: 2.5em; margin: 0 3vw;}
 #content{margin: 0 3vw; background-color: #f3f3f3;}
+h2,h3{text-decoration:underline;}
