@@ -1,3 +1,6 @@
 [submodule "article"]
 	path = article
 	url = https://github.com/chitose1020/article
+[submodule "SSG"]
+	path = SSG
+	url = https://github.com/chitose1020/SSG
