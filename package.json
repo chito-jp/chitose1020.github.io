@@ -1,5 +1,5 @@
 {
-    "name": "site",
+    "name": "build-site",
     "version": "1.0.0",
     "description": "web site",
     "main": "index.js",
