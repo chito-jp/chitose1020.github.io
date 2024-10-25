@@ -4,7 +4,7 @@
     "description": "web site",
     "main": "index.js",
     "scripts": {
-      "build": "git submodule update --remote --merge"
+      "build": "git submodule update --remote --merge && node SSG/main.js"
     },
     "keywords": [],
     "author": "chito",
