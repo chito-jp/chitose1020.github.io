@@ -14,4 +14,4 @@ ul{margin: 0; list-style: none;}
 #title{font-size: 2.5em; margin: 0 3vw;}
 #content{margin: 0 3vw; background-color: #f3f3f3;}
 h2,h3{text-decoration:underline;}
-blockquote{border-left: 4px solid #73abd1; background-color: #f9f9f9; color: #555;}
+blockquote{border-left: 4px solid #73abd1; background-color: #f9f9f9; color: #555; margin: 16px 0; padding: 8px 16px;}
