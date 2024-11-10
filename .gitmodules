@@ -1,6 +1,9 @@
 [submodule "article"]
 	path = article
-	url = https://github.com/chitose1020/article
+	url = https://github.com/chito-jp/article
 [submodule "SSG"]
 	path = SSG
-	url = https://github.com/chitose1020/SSG
+	url = https://github.com/chito-jp/SSG
+[submodule "bio"]
+	path = bio
+	url = https://github.com/chito-jp/bio
