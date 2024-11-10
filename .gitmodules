@@ -4,3 +4,6 @@
 [submodule "SSG"]
 	path = SSG
 	url = https://github.com/chito-jp/SSG
+[submodule "bio"]
+	path = bio
+	url = https://github.com/chito-jp/bio
